@@ -60,6 +60,13 @@
 			<scope>provided</scope>
 		</dependency>
 
+
+		<dependency>
+			<groupId>org.apache.camel.springboot</groupId>
+			<artifactId>camel-activemq-starter</artifactId>
+			<version>3.16.0</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>

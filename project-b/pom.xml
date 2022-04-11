@@ -11,5 +11,13 @@
 
     <artifactId>project-b</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.camel.springboot</groupId>
+            <artifactId>camel-jackson-starter</artifactId>
+            <version>3.16.0</version>
+        </dependency>
+    </dependencies>
+
 
 </project>
