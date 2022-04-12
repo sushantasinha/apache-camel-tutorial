@@ -17,7 +17,7 @@ public class ActiveMqSenderRouter extends RouteBuilder {
 
         //Now pick files from local and send to activemq
         ///This will moved .camel folder under, after processing, under "C://input/json", where we could see all processed files.
-        from("file:C://input/json")
+        from("file:C://input/json")//file need to place in C://input/json/kafka
                 .log("${body}")
                 .to("activemq:my-active-queue");
 
