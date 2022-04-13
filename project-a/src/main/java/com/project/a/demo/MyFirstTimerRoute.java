@@ -20,14 +20,15 @@ public class MyFirstTimerRoute extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
+        //uncomment before use
         //timer -> transformation -> log
-        from("timer:first-timer")//timer is keyword, like scheduler. "first-timer" is name of the timer. Generating null message every seconds
+        /*from("timer:first-timer")//timer is keyword, like scheduler. "first-timer" is name of the timer. Generating null message every seconds
                 //.transform().constant("My Constant Message. Time now:" + LocalTime.now())
                 //.bean("getCurrentTimeBean")
                 //.bean(getCurrentTimeBean, "getCurrentTime")//If one method the method name is optional, but in case of multiple methods present under bean, then need to specify the method name.
                 //.bean(simpleLogComponent)
                 .process(new SimplLogProcessor())
-                .to("log:first-timer");//log is keyword
+                .to("log:first-timer");//log is keyword*/
 
         //If we are affecting the body of the message, those are transformation, otherwise it is processing
     }
