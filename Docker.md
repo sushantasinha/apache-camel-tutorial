@@ -118,7 +118,8 @@ like, if we run docker container stop command, it will show list of events happe
 docker top -> top process running on the specific container 
 
 docker stats -> CPU, memory etc. details
- 
+
+docker stop --time=120 <CONTAINER_NAME>
 
 
 docker run -d -p 5000:5000 -m 512m in28min/todo-web-application-h2:0.0.1-SNAPSHOT
@@ -134,6 +135,10 @@ As we rae using docker desktop, the docker compose is already installed
 
 copy docker-conpose.yaml to a local directory and then run 
 docker compose up 
+
+
+docker images: show list of images
+docker ps: which containers are up and running
 
 
 
